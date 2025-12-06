@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "buildCommand": "cd .. && npm run build:operator",
+  "outputDirectory": "../dist/operator",
+  "devCommand": "cd .. && npm run dev:operator",
+  "installCommand": "cd .. && npm install",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+

@@ -2,9 +2,9 @@ import type { Channel, DispatchRecipient, ChannelDelivery } from '../types';
 
 // Stub service for email dispatch
 export async function sendEmail(
-  to: string,
-  subject: string,
-  body: string
+  _to: string,
+  _subject: string,
+  _body: string
 ): Promise<{ success: boolean; messageId?: string; error?: string }> {
   // Stub implementation
   await new Promise(resolve => setTimeout(resolve, 500));
@@ -16,8 +16,8 @@ export async function sendEmail(
 
 // Stub service for SMS dispatch
 export async function sendSMS(
-  to: string,
-  message: string
+  _to: string,
+  _message: string
 ): Promise<{ success: boolean; messageId?: string; error?: string }> {
   // Stub implementation
   await new Promise(resolve => setTimeout(resolve, 300));
@@ -29,8 +29,8 @@ export async function sendSMS(
 
 // Stub service for pager dispatch
 export async function sendPager(
-  to: string,
-  message: string
+  _to: string,
+  _message: string
 ): Promise<{ success: boolean; messageId?: string; error?: string }> {
   // Stub implementation
   await new Promise(resolve => setTimeout(resolve, 400));
@@ -42,8 +42,8 @@ export async function sendPager(
 
 // Stub service for voice/TTS dispatch
 export async function sendVoiceCall(
-  to: string,
-  ttsScript: string
+  _to: string,
+  _ttsScript: string
 ): Promise<{ success: boolean; callId?: string; error?: string }> {
   // Stub implementation
   await new Promise(resolve => setTimeout(resolve, 1000));
@@ -109,31 +109,31 @@ export const dbService = {
   async getTemplates(): Promise<any[]> {
     return [];
   },
-  async getTemplate(id: string): Promise<any | null> {
+  async getTemplate(_id: string): Promise<any | null> {
     return null;
   },
   async createTemplate(template: any): Promise<any> {
     return { ...template, id: `template-${Date.now()}` };
   },
-  async updateTemplate(id: string, template: any): Promise<any> {
+  async updateTemplate(_id: string, template: any): Promise<any> {
     return template;
   },
   async getDistributionLists(): Promise<any[]> {
     return [];
   },
-  async getDistributionList(id: string): Promise<any | null> {
+  async getDistributionList(_id: string): Promise<any | null> {
     return null;
   },
   async createDistributionList(list: any): Promise<any> {
     return { ...list, id: `list-${Date.now()}` };
   },
-  async updateDistributionList(id: string, list: any): Promise<any> {
+  async updateDistributionList(_id: string, list: any): Promise<any> {
     return list;
   },
   async getUsers(): Promise<any[]> {
     return [];
   },
-  async getDispatchEvents(filters?: any): Promise<any[]> {
+  async getDispatchEvents(_filters?: any): Promise<any[]> {
     return [];
   },
   async createDispatchEvent(event: any): Promise<any> {

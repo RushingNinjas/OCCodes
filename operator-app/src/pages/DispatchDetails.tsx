@@ -7,7 +7,7 @@ import { ArrowLeft, CheckCircle, XCircle, Clock, RefreshCw } from 'lucide-react'
 import { storage } from '@shared/utils/storage';
 import { formatDate } from '@shared/utils/formatDate';
 import { dispatchToChannels } from '@shared/services/stubServices';
-import type { DispatchEvent, CodeTemplate, ChannelDelivery } from '@shared/types';
+import type { DispatchEvent, CodeTemplate } from '@shared/types';
 
 export const DispatchDetails = () => {
   const { eventId } = useParams();

@@ -13,7 +13,6 @@ export const Dashboard = () => {
   const [templates, setTemplates] = useState<CodeTemplate[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [filterSeverity, setFilterSeverity] = useState<Severity | 'all'>('all');
-  const [filterDepartment, setFilterDepartment] = useState<string>('all');
 
   useEffect(() => {
     loadTemplates();

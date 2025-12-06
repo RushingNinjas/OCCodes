@@ -7,7 +7,7 @@ import { DispatchDetails } from './pages/DispatchDetails';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/operator">
       <Layout>
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />

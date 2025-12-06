@@ -20,5 +20,6 @@ export default defineConfig({
   build: {
     outDir: '../dist/manager',
   },
+  base: '/manager/',
 })
 

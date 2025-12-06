@@ -1,19 +1,28 @@
 {
   "version": 2,
-  "builds": [
+  "buildCommand": "npm run build:manager && npm run build:operator",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "rewrites": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist/manager"
-      }
-    }
-  ],
-  "routes": [
+      "source": "/manager/(.*)",
+      "destination": "/manager/index.html"
+    },
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/operator/(.*)",
+      "destination": "/operator/index.html"
+    },
+    {
+      "source": "/manager",
+      "destination": "/manager/index.html"
+    },
+    {
+      "source": "/operator",
+      "destination": "/operator/index.html"
+    },
+    {
+      "source": "/",
+      "destination": "/manager/index.html"
     }
   ]
 }
-

@@ -10,7 +10,7 @@ import { Reports } from './pages/Reports';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/manager">
       <Layout>
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />

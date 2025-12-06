@@ -4,7 +4,7 @@ import { Card } from '@shared/components/Card';
 import { Button } from '@shared/components/Button';
 import { Badge } from '@shared/components/Badge';
 import { Input } from '@shared/components/Input';
-import { Plus, Search, Edit, Eye, Trash2 } from 'lucide-react';
+import { Plus, Edit, Trash2 } from 'lucide-react';
 import { storage } from '@shared/utils/storage';
 import type { CodeTemplate, Severity, TemplateStatus } from '@shared/types';
 

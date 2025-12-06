@@ -6,7 +6,7 @@ import { Input } from '@shared/components/Input';
 import { Textarea } from '@shared/components/Textarea';
 import { Select } from '@shared/components/Select';
 import { Badge } from '@shared/components/Badge';
-import { X, Plus, Save, UserPlus } from 'lucide-react';
+import { X, Plus, Save } from 'lucide-react';
 import { storage } from '@shared/utils/storage';
 import type { DistributionList, DistributionListMember, DistributionListTag } from '@shared/types';
 

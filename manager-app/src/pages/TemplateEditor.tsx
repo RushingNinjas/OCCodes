@@ -263,7 +263,7 @@ export const TemplateEditor = () => {
                   <div className="flex-1">
                     <span className="font-medium">{field.label}</span>
                     <span className="text-sm text-gray-500 ml-2">({field.key})</span>
-                    {field.required && <Badge variant="warning" size="sm" className="ml-2">Required</Badge>}
+                    {field.required && <span className="ml-2"><Badge variant="warning" size="sm">Required</Badge></span>}
                   </div>
                   <button
                     onClick={() => handleRemoveVariable(index)}

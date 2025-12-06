@@ -25,7 +25,6 @@ export const Users = () => {
 
   const handleSaveUser = (userData: Partial<User>) => {
     const userList = [...users];
-    const now = new Date().toISOString();
 
     if (editingUser) {
       const index = userList.findIndex(u => u.id === editingUser.id);

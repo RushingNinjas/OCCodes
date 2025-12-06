@@ -4,7 +4,7 @@ import { Button } from '@shared/components/Button';
 import { Badge } from '@shared/components/Badge';
 import { Input } from '@shared/components/Input';
 import { Select } from '@shared/components/Select';
-import { Download, Filter, Calendar } from 'lucide-react';
+import { Download } from 'lucide-react';
 import { storage } from '@shared/utils/storage';
 import { formatDate } from '@shared/utils/formatDate';
 import type { DispatchEvent, Severity } from '@shared/types';
@@ -76,9 +76,6 @@ export const Reports = () => {
     a.download = `dispatch-events-${new Date().toISOString().split('T')[0]}.csv`;
     a.click();
   };
-
-  const templates = storage.get<any[]>('templates') || [];
-  const operators = storage.get<any[]>('users')?.filter(u => u.role === 'operator') || [];
 
   const getStatusColor = (status: string) => {
     switch (status) {

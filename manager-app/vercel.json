@@ -1,8 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "cd .. && npm run build:manager",
+  "buildCommand": "npm run vercel-build",
   "outputDirectory": "../dist/manager",
-  "devCommand": "cd .. && npm run dev:manager",
   "installCommand": "cd .. && npm install",
   "framework": "vite",
   "rewrites": [

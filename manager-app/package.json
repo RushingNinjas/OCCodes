@@ -1,0 +1,8 @@
+{
+  "name": "code-dispatch-manager",
+  "version": "1.0.0",
+  "scripts": {
+    "vercel-build": "cd .. && npm install && npm run build:manager"
+  }
+}
+

@@ -8,7 +8,8 @@
     "build:manager": "tsc && vite build --config vite.manager.config.ts",
     "build:operator": "tsc && vite build --config vite.operator.config.ts",
     "preview:manager": "vite preview --config vite.manager.config.ts",
-    "preview:operator": "vite preview --config vite.operator.config.ts"
+    "preview:operator": "vite preview --config vite.operator.config.ts",
+    "vercel-build": "npm run build:manager"
   },
   "dependencies": {
     "react": "^18.2.0",
